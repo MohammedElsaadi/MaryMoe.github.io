@@ -65,5 +65,8 @@ var t = setInterval(() =>{
     var seconds = (minutes - Math.floor(minutes)) * 60;
     const dateText = document.querySelector('#date');
     
-    dateText.innerHTML = Math.floor(days) + " delightful days, " + Math.floor(hours) + " hours, " + Math.floor(minutes) + " minutes, and " + Math.round(seconds) + " seconds!";
+    dateText.innerHTML = Math.floor(days) + " delightful days,<br>"
+     + Math.floor(hours) + " hours,<br>"
+      + Math.floor(minutes) + " minutes,<br>"
+       + "and " + Math.round(seconds) + " seconds!";
     }, 1000);
