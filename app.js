@@ -1,6 +1,6 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
-const navLogo = document.querySelector('#navbar__Logo');
+const navLogo = document.querySelector('#navbar__logo');
 
 //Display Mobile Menu
 const mobileMenu = () => {
@@ -17,18 +17,18 @@ const highlightMenu = () => {
     const aboutMenu = document.querySelector('#about-page');
     const funMenu = document.querySelector('#funstuff-page');
     let scrollPos = window.scrollY;
-
+    console.debug(scrollPos);
     // adds 'highlight' class to my menu items
     if(window.innerWidth > 960 && scrollPos < 600) {
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         return;
-    }else if (window.innerWidth > 960 && scrollPos < 1400){
+    }else if (window.innerWidth > 960 && scrollPos < 1900){
         aboutMenu.classList.add('highlight');
         homeMenu.classList.remove('highlight');
         funMenu.classList.remove('highlight');
         return;
-    }else if (window.innerWidth > 960 && scrollPos < 2345){
+    }else if (window.innerWidth > 960 && scrollPos < 3000){
         funMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         return;
@@ -53,3 +53,17 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+
+//date section
+var t = setInterval(() =>{
+    n = new Date();
+    o = new Date("2021-05-24T09:45:00");
+    var time = n.getTime() - o.getTime();
+    var days = time / (1000 * 3600 * 24);
+    var hours = (days - Math.floor(days)) * 24;
+    var minutes = (hours - Math.floor(hours)) * 60;
+    var seconds = (minutes - Math.floor(minutes)) * 60;
+    const dateText = document.querySelector('#date');
+    
+    dateText.innerHTML = Math.floor(days) + " delightful days, " + Math.floor(hours) + " hours, " + Math.floor(minutes) + " minutes, and " + Math.round(seconds) + " seconds!";
+    }, 1000);

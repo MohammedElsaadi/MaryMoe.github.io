@@ -1,3 +1,20 @@
+:root{
+    --coral: #ffa38c;
+    --green: #8CFFA3;
+    --purple: #A38CFF;
+    --yellow: #FFDC8C;
+    --pink: #FF8CAF;
+    --otherCoral: #F79489;
+    --dustRose: #F8AFA6;
+    --roseQuartz: #FADCD9;
+    --cream: #F9F1F0;
+
+    --lightPink: #FFC5D0;
+    --seashell: #F7D6D0;
+    --hotPink: #FB6090;
+    --roseRed: #821D30;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +24,7 @@
 }
 
 .navbar{
-    background: #131313;
+    background: var(--cream);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -30,8 +47,8 @@
 }
 
 #navbar__logo{
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: var(--hotPink);
+    background-image: linear-gradient(to top, var(--hotPink) 0%, var(--roseRed) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -55,7 +72,7 @@
 }
 
 .navbar__links{
-    color:white;
+    color:var(--hotPink);
     display: flex;
     align-items:center;
     justify-content: center;
@@ -76,15 +93,15 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: var(--coral);
+    background: -webkit-linear-gradient(to right, var(--cream), var(--coral));
+    background: linear-gradient(to right, var(--cream), var(--coral));
     color: white;
     transition: all 0.3s ease;
 }
 
 .navbar__links:hover{
-    color: #9518fc;
+    color: var(--coral);
     transition: all 0.3s ease;
 }
 
@@ -112,7 +129,7 @@
     }
 
     .navbar__menu.active{
-        background: #131313;
+        background: var(--cream);
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -130,7 +147,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background-color: white;
+        background-color: var(--hotPink);
     }
 
     .navbar__item{
@@ -180,8 +197,8 @@
 
 /* Hero Section */
 .hero{
-    background: black;
-    background: linear-gradient(to right, #161616, black);
+    background: var(--cream);
+    background: linear-gradient(to top, var(--cream),var(--dustRose));
     padding: 200px 0;
 }
 
@@ -200,13 +217,20 @@
 .hero__heading{
     font-size: 100px;
     margin-bottom: 24px;
-    color: white
+    background: var(--roseRed);
+    background: -webkit-linear-gradient(to top, var(--roseRed), var(--hotPink));
+    background: linear-gradient(to top, var(--roseRed), var(--hotPink));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .hero__heading span{
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: var(--roseRed);
+    background: -webkit-linear-gradient(to bottom, var(--roseRed), var(--hotPink));
+    background: linear-gradient(to bottom, var(--roseRed), var(--hotPink));
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -216,9 +240,9 @@
 
 .hero__description{
     font-size: 60px;
-    background: #da22ff;
-    background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
-    background: linear-gradient(to right, #8f0eff, #da22ff);
+    background: var(--roseRed);
+    background: -webkit-linear-gradient(to right, var(--roseRed), var(--hotPink));
+    background: linear-gradient(to right, var(--roseRed), var(--hotPink));
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
