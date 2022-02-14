@@ -199,7 +199,7 @@
 .hero{
     background: var(--cream);
     background: linear-gradient(to top, var(--cream),var(--dustRose));
-    padding: 200px 0;
+    padding: 100px 0;
 }
 
 .hero__container{
@@ -266,7 +266,8 @@
 
 /* About Section */
 .main{
-    background-color: black;
+    background: #468CCA;
+    background: linear-gradient(to top, #468CCA,#A2CEEA);
     padding: 10rem 0;
 }
 
@@ -286,12 +287,13 @@
 .main__content{
     color:white;
     width: 100%;
+    
 }
 
 .main__content h1{
     font-size: 2rem;
-    background-color: #fe3b6f;
-    background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+    background-color: #2c4b2c;
+    background-image: linear-gradient(to bottom, #2c4b2c, #2aaf45);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -303,9 +305,9 @@
 
 .main__container h2{
     font-size: 4rem;
-    background: #ff8177;
-    background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
-    background: linear-gradient(to right, #8f0eff, #da22ff);
+    background: #012949;
+    background: -webkit-linear-gradient(to bottom, #012949, #035CA3);
+    background: linear-gradient(to bottom, #012949, #035CA3);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -317,6 +319,7 @@
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .main__btn{
@@ -366,7 +369,7 @@
 }
 
 .main__image--card{
-    margin: 1-px;
+    margin: 10px;
     height: 500px;
     width: 500px;
     border-radius: 4px;
@@ -374,7 +377,8 @@
     flex-direction: column;
     justify-content: center;
     color: white;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background-image: url("01814_01_sunrichorangesum.jpg");
+    background-size: 100%;
 }
 
 .fa-layer-group
@@ -466,7 +470,8 @@
 
 /* Service Section */
 .services{
-    background: black;
+    background: var(--yellow);
+    background: linear-gradient(to top, var(--green),var(--yellow));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -476,15 +481,14 @@
 }
 
 .services h1{
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
+    background-color: var(--purple);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     margin-bottom: 5rem;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
 }
 
 .services__wrapper{
@@ -502,20 +506,29 @@
     flex-direction: column;
     justify-content: center;
     color: white;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc100f 100%);
     transform: 0.3s ease-in;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
+.services__card:nth-child(1){
+    background-image: url("71sBiN714zL._AC_SL1000_.jpg");
+    background-size: 100% 100%;
+}
 .services__card:nth-child(2){
-    background: #ff512f;
-    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
-    background: linear-gradient(to right, #dd2476, #ff512f);
+    background-image: url("Sketching-Techniques-for-Beginners--682x1024.jpg");
+    background-size: 100%;
 }
 
 .services__card:nth-child(3){
-    background: #ff512f;
-    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
-    background: linear-gradient(to right, #dd2476, #ff512f);
+    background-image: url("cat.jpg");
+    background-size: 150%;
+    background-position: 50%;
+}
+
+.services__card:nth-child(4){
+    background-image: url("Untitled_Artwork (1).png");
+    background-size: 100%;
+    background-position-y: 45%;
 }
 
 .services__card h2{
@@ -535,13 +548,13 @@
 }
 
 .services__card button{
-    color:white;
+    color: var(--cream);
+    font-size: 1.2rem;
     padding: 14px 24px;
     border: none;
     outline: none;
     border-radius: 4px;
-    background: black;
-    font-size: 1rem;
+    background: var(--roseRed);
 }
 
 .services__card button:hover{

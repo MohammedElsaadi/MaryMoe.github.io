@@ -1,0 +1,62 @@
+button {
+    font-size: 1.2rem;
+    background: var(--roseRed);
+    background: -webkit-linear-gradient(to bottom, var(--roseRed), var(--hotPink));
+    background: linear-gradient(to bottom, var(--roseRed), var(--hotPink));
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    color:var(--cream)
+  }
+
+  :root{
+    --coral: #ffa38c;
+    --green: #8CFFA3;
+    --purple: #A38CFF;
+    --yellow: #FFDC8C;
+    --pink: #FF8CAF;
+    --otherCoral: #F79489;
+    --dustRose: #F8AFA6;
+    --roseQuartz: #FADCD9;
+    --cream: #F9F1F0;
+
+    --lightPink: #FFC5D0;
+    --seashell: #F7D6D0;
+    --hotPink: #FB6090;
+    --roseRed: #821D30;
+}
+
+  body{
+      background-color: var(--coral);
+  }
+
+  h2 {
+      margin: 30px auto 0 0;
+      text-align: center;
+      color: var(--roseRed);
+      font-size: 2rem;
+  }
+
+  h1{
+    font-size: 100px;
+    margin-bottom: 24px;
+    background: var(--roseRed);
+    background: -webkit-linear-gradient(to top, var(--roseRed), var(--hotPink));
+    background: linear-gradient(to top, var(--roseRed), var(--hotPink));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  p{
+      text-align: center;
+      font-size: 1.2rem;
+  }
