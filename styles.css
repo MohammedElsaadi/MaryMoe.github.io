@@ -515,8 +515,10 @@
     background-size: 100% 100%;
 }
 .services__card:nth-child(2){
-    background-image: url("Sketching-Techniques-for-Beginners--682x1024.jpg");
-    background-size: 100%;
+    background-image: url("fbd63e4b6cbda31bdbd5fbf822485c59.jpg");
+    background-size: 150%;
+    background-position-x: 20%;
+    background-position-y: -80%;
 }
 
 .services__card:nth-child(3){
